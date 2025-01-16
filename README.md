@@ -5,7 +5,7 @@
 This project is a web application designed to facilitate peer tutoring. 
 It allows tutees to book lessons with tutors, and administrators to manage tutors and validate lessons.
 
-**notice:** this application is actually used in my school and hosted on my school's server and domain, which means that only members of my school's organization will be able to access it. Do not worry tho, i filmed a demo ;)
+**notice:** only members of my school's organization will be able to access it, to avoid making a mess of everything. Do not worry tho, i filmed a demo ;)
 
 ## Features
 
