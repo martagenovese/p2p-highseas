@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutor Home - Tutoring Website</title>
+    <link href='https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.min.css' rel='stylesheet' />
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.min.js' defer></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1 id="greeting">Welcome, Tutor!</h1>
+        <nav>
+            <h2>Dashboard</h2>
+            <ul>
+                <li><a href="/tutor/profile.html">Il tuo profilo</a> Per gestire le materie insegnate</li>
+                <li><a href="../login.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+        </section>
+        <section>
+            <h2>Tutte le lezioni</h2>
+            <p>Per dare la propria disponibilità è sufficiente cliccare sul giorno interessato e seguire le indicazioni</p>
+            <!-- Content for upcoming sessions -->
+            <div id='calendar'></div>
+            <h2>Lezioni in programma</h2>
+            <p>Calendario con le lezioni prenotate dai tutorati</p>
+            <div id="calendar-events"></div>
+        </section>
+        <section>
+            <h2>Lezioni Tenute</h2>
+            <p id="lessons-count"></p>
+            <p id="lessons-count-PASTReserved"></p>
+            <p id="lessons-total"></p>
+            <p>Quando avrai raggiunto un totale di 40 lezioni non potrai più fare altre lezioni</p>
+        </section>
+    </main>
+</body>
+</html>

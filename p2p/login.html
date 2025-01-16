@@ -1,0 +1,88 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Tutoring Website</title>
+    <script src="login.js" defer></script>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Tutor Login</h2>
+        <form id="tutor-login-form" onsubmit="handleLogin(event, 'tutor')">
+            <div class="form-group">
+                <label for="tutor-username">Username:</label>
+                <input type="text" id="tutor-username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="tutor-password">Password:</label>
+                <input type="password" id="tutor-password" name="password" required>
+            </div>
+            <div class="form-group">
+                <label for="role"></label>
+                <input type="hidden" name="user_type" value="tutor">
+            </div>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <div class="login-container">
+        <h2>Tutee Login</h2>
+        <form id="tutee-login-form" onsubmit="handleLogin(event, 'tutee')">
+            <div class="form-group">
+                <label for="tutee-username">Username:</label>
+                <input type="text" id="tutee-username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="tutee-password">Password:</label>
+                <input type="password" id="tutee-password" name="password" required>
+            </div>
+            <div class="form-group">
+                <label for="role"></label>
+                <input type="hidden" name="user_type" value="tutee">
+            </div>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <div class="login-container">
+        <h2>Admin Login</h2>
+        <form id="admin-login-form" onsubmit="handleLogin(event, 'admin')">
+            <div class="form-group">
+                <label for="admin-username">Username:</label>
+                <input type="text" id="admin-username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="admin-password">Password:</label>
+                <input type="password" id="admin-password" name="password" required>
+            </div>
+            <div class="form-group">
+                <label for="role"></label>
+                <input type="hidden" name="user_type" value="admin">
+            </div>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+    
+    <div class="login-container">
+        <h2>Centralino Login</h2>
+        <form id="centralino-login-form" onsubmit="handleLogin(event, 'centralino')">
+            <div class="form-group">
+                <label for="centralino-username">Username:</label>
+                <input type="text" id="centralino-username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="centralino-password">Password:</label>
+                <input type="password" id="centralino-password" name="password" required>
+            </div>
+            <div class="form-group">
+                <label for="role"></label>
+                <input type="hidden" name="user_type" value="centralino">
+            </div>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <h2><a href="registration/register.html">Registrati come Tutee</a></h2>
+
+</body>
+</html>

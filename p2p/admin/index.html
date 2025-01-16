@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Lezioni</title>
+    <link href='https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.min.css' rel='stylesheet' />
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.min.js' defer></script>
+    <script src="script.js" defer></script>
+    <script src="../logout.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Admin Dashboard</h1>
+        <nav>
+            <ul>
+                <li><a href="./editTutors.html">Modifica Tutor</a></li>
+                <li><a href="../login.html" onclick="handleLogout()">Logout</a></li>
+            </ul>
+    </header>
+    <main>
+        <h2>Lezioni</h2>
+        <div id="calendar"></div>
+        <h3>Lista di lezioni da validare</h3>
+        <ul id="unvalidated-events-list"></ul>
+    </main>
+</body>
+</html>
